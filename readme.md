@@ -6,10 +6,16 @@
 
 TBD
 
-# Test
+# Test for Now Client
 
 ```sh
 KEY=GET_YOUR_KEY_FROM_NOW yarn test 
+```
+
+# Test for Node lambda
+
+```sh
+KEY=GET_YOUR_KEY_FROM_NOW NODE_ENV=development yarn test:server
 ```
 
 Licensse @ Jimmy Moon
