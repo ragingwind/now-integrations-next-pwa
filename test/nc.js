@@ -12,6 +12,9 @@ if (!process.env.KEY) {
       key: process.env.KEY
     });
 
+    const projects = await client.getProjects();
+    console.log(JSON.stringify(projects));
+
     const deployments = await client.getDeployments();
     console.log(JSON.stringify(deployments));
 
