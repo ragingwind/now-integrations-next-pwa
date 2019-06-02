@@ -1,6 +1,12 @@
 {
-	"version": 2,
-	"name": "now-next-pwa",
-  "builds": [{ "src": "index.js", "use": "@now/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
+  "version": 2,
+  "name": "now-next-pwa",
+  "builds": [
+    { "src": "*.js", "use": "@now/node" },
+    { "src": "assets/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/redirect", "dest": "/redirect.js" },
+    { "src": "/", "dest": "/index.js" }
+  ]
 }
