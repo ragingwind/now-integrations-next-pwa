@@ -4,14 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test:nc": "node ./test/nc.js",
-    "test:server": "node ./test/server.js"
+    "test": "node ./test/nc.js",
+    "test:lambda": "node ./test/server.js",
+    "test:patch": "node ./test/patch.js"
   },
   "dependencies": {
+    "@zeit/integration-utils": "latest",
     "crypto-hash": "^1.2.1",
+    "date-fns": "^1.30.1",
+    "form-data": "^2.3.3",
     "fs-extra": "^8.0.1",
     "globby": "^9.2.0",
-    "got": "^9.6.0"
+    "got": "^9.6.0",
+    "isomorphic-unfetch": "^3.0.0"
   },
   "devDependencies": {
     "temp-dir": "^2.0.0"
