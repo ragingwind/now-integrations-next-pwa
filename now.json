@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "name": "now-next-pwa",
+	"name": "now-next-pwa",
+	"alias": "next-pwa.tech",
   "builds": [
     { "src": "*.js", "use": "@now/node" },
     { "src": "assets/*", "use": "@now/static" }
